@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Post ur answer</title>
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+textarea{
+background-color:transparent;
+border:1px solid green;
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  border-bottom: 1px solid #4caf50;
+
+  border-width: 0px 0px 1px 0px;
+  outline: none;
+  background: none;
+  color: white;
+  font-size: 18px;
+  width: 100%;
+  float: left;
+  margin: 0 18px;
+  }
+  i{
+  width: 26px;
+  float: left;
+  text-align: center;
+}
+
+</style>
+</head>
+<body>
+<form name="form1" action="PostServlet" method="post">
+<div class="login-box">
+<div class="text-center">
+  <h1>Post ur answer</h1>
+    <div class="textbox">
+     <i class="fas fa-edit"></i>
+      <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+      <input id="pid" type="text" class="form-control" name="pid" placeholder="enter ur id">
+    </div>
+	<br/>
+	 <div class="textarea">
+	 <i class="fa fa-keyboard"></i>
+	 <span class="input-group-addon"><i class="	glyphicon glyphicon-edit"></i></span>
+      <textarea class="form-control" rows="8" id="qpid" name="qpid" placeholder="post an answer"></textarea>
+	  </div>
+	  <br></br>
+	   <div>
+  <button type="submit" class="btn">post</button>
+  </div>
+	  </div>
+	  </div>
+	   </form>
+</body>
+</html>
